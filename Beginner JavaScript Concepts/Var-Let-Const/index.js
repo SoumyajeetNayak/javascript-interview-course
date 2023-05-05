@@ -73,7 +73,7 @@ add();
 /*********RE-DECLARATION**************/
 /*************************************/
 function add() {
-  {
+  if (true) {
     var x = 10;
     console.log(x);
     var x = 20;
@@ -87,7 +87,7 @@ add();
 /***DECLARATION WITHOUT ASSIGNMENT****/
 /*************************************/
 function add() {
-  {
+  if (true) {
     var x;
     console.log(x);
   }
@@ -139,3 +139,27 @@ if (true) {
   // const x;
   // console.log(x);
 }
+
+const numbers = [1, 2, 3, 4, 5];
+console.log(numbers);
+numbers[1] = 10;
+console.log(numbers);
+
+let array = [2, 3, 4];
+// numbers = array; //This will throw error
+// numbers = [3, 4, 5]; // This will throw error
+
+const person = {
+  name: "John Doe",
+  age: 30,
+};
+
+console.log(person);
+
+person["gender"] = "male";
+console.log(person);
+
+// This will throw error
+// person = {
+//   name: "Jack",
+// };
